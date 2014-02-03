@@ -1,0 +1,30 @@
+//
+// Application stylesheet
+// -----------------------------------------------
+
+.app-navbar {
+    border-width: 0 0 1px;
+}
+
+.app-toolbar + .app-navbar {
+    margin-top: @navbar-height;
+}
+
+.app-header,
+.app-content {
+    padding: 0 ceil((@line-height-computed / 2));
+}
+
+#frames{
+    overflow-x: scroll;
+    width: 100%;
+    margin-bottom: ceil((@line-height-computed / 2));
+    padding-bottom: @line-height-computed;
+}
+.frame{margin-right:20px;float:left;}
+.frame:last-child{margin-right:0;}
+.frame img{display:none;vertical-align:middle;}
+iframe{border:solid 1px #000;}
+.widthOnly {height:580px;}
+.widthOnly h2 span{display:none;}
+.widthOnly iframe{height:500px;}
